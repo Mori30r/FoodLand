@@ -19,6 +19,7 @@ letter-spacing: .4rem;
 font-size: 2rem;
 color: white;
 font-weight: 1000;
+padding-left: 8rem;
 `;
 
 export const NavBarItem = styled.a`
@@ -55,7 +56,7 @@ export const MainHeroLeft = styled.div`
 display: flex;
 flex-direction: column;
 justify-content: center;
-padding-left: 2rem;
+padding-left: 10rem;
 `;
 
 export const MainHeroLeftHeader = styled.h1`
@@ -68,13 +69,13 @@ color: white;
 opacity: .8;
 font-size: 2rem;
 width: 35rem;
-padding: 2rem 0;
+padding: 2rem .2rem;
 `;
 
 export const MainHeroRightImage = styled.img.attrs( props => ({
     src: props.src
 }))`
 z-index: 2;
-width: 70rem;
+width: 65rem;
 height: 45rem;
 `;

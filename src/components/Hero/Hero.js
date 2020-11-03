@@ -33,7 +33,7 @@ export const Hero = () => {
                 <MainHeroLeft>
                     <MainHeroLeftHeader>Online Pizza Ordering.</MainHeroLeftHeader>
                     <MainHeroLeftParagraph>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</MainHeroLeftParagraph>
-                    <Button width='17rem' height='6rem'>Order Now</Button>
+                    <Button width='17rem' height='6rem' shadow>Order Now</Button>
                 </MainHeroLeft>
                 <MainHeroRight>
                     <MainHeroRightImage src={Pizza}/>
