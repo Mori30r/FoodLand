@@ -3,8 +3,8 @@ import Pizza from './../../assets/images/pizza.png';
 
 import {
     MainHero,
-    MainHeroLeft,
-    MainHeroLeftHeader, MainHeroLeftParagraph,
+    MainHeroLeft, MainHeroLeftHeader,
+    MainHeroLeftParagraph,
     MainHeroRight, MainHeroRightImage, MainHeroRightPath,
     NavBar,
     NavBarDiv,

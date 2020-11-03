@@ -34,6 +34,7 @@ z-index: 0;
 display: flex;
 justify-content: space-between;
 align-items: center;
+height: 87vh;
 `;
 
 export const MainHeroRight = styled.div`
