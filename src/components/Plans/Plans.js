@@ -1,5 +1,12 @@
 import React from 'react';
-import {PlansCard, PlansSection, PlansSectionCards, PlansSectionHeading, PlansSectionPath} from "./Plans.elements";
+import {
+    PlansSection,
+    PlansSectionCards,
+    PlansSectionHeading,
+    PlansSectionPath
+} from "./Plans.elements";
+import { data } from '../../dummyData'
+import {PlansCardItem} from "./PlansCardItem";
 
 export const Plans = () => {
     return (
@@ -8,9 +15,7 @@ export const Plans = () => {
                 <PlansSectionPath/>
                 <PlansSectionHeading><h1>Our Most Popular Pizzas.</h1></PlansSectionHeading>
                 <PlansSectionCards>
-                    <PlansCard>s</PlansCard>
-                    <PlansCard>s</PlansCard>
-                    <PlansCard>s</PlansCard>
+                    { data.map((card)=> <PlansCardItem key={card.name} card={card}/>) }
                 </PlansSectionCards>
             </PlansSection>
         </>

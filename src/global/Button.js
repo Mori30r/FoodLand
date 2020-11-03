@@ -13,4 +13,5 @@ font-weight: 600;
 background-color: ${ props => props.secondary ? 'rgba(171, 209, 178, .5)' : props.theme.red};
 cursor: pointer;
 box-shadow: ${ props => props.shadow && '0 .5rem 1rem rgba(0, 0, 0, .3)'};
+margin: ${ props => props.center && 'auto' };
 `;
