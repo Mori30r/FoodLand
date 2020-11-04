@@ -5,9 +5,10 @@ export const PlansSection = styled.section`
 position: relative;
 display: flex;
 flex-direction: column;
-background-image: linear-gradient(to bottom right, #83B78C,  rgba(100, 130, 100, .2)) ,url(${PlansBackground});
+background-image: linear-gradient(to bottom left, #83B78C,  rgba(100, 130, 100, .2)) ,url(${PlansBackground});
 z-index: 1;
 background-size: cover;
+height: 100vh;
 `;
 
 export const PlansSectionPath = styled.div`
@@ -37,6 +38,7 @@ padding: 5rem;
 
 export const PlansCard = styled.div`
 border-radius: 2rem;
+box-shadow: 0 1rem 2rem rgba(0, 0, 0, .7);
 height: 35rem;
 margin: 1rem 5rem;
 display: flex;
@@ -50,6 +52,11 @@ to right bottom,
  #bfdaa1 20%,
  #bfdaa1 100%
  );
+ backface-visibility: hidden;
+ transition: all .2s ease-out;
+ &:hover{
+ transform: translateY(-1rem) scale(1.2);
+ }
 `;
 
 export const PlansCardImage = styled.div`

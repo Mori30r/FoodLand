@@ -79,4 +79,8 @@ export const MainHeroRightImage = styled.img.attrs( props => ({
 z-index: 2;
 width: 65rem;
 height: 45rem;
+transition: all .5s;
+&:hover{
+transform: translateX(-5rem);
+}
 `;
