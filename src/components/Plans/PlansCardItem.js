@@ -8,7 +8,6 @@ import {
     PlansCardImagePizza
 } from "./Plans.elements";
 import PizzaBox from "../../assets/images/pizza-box.png";
-import VegPizza from "../../assets/images/veg-pizza.png";
 import {Button} from "../../global/Button";
 
 

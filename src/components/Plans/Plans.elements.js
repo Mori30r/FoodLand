@@ -1,9 +1,13 @@
 import styled from "styled-components";
+import PlansBackground from '../../assets/images/plans-background.jpg'
 
 export const PlansSection = styled.section`
 position: relative;
 display: flex;
 flex-direction: column;
+background-image: linear-gradient(to bottom right, #83B78C,  rgba(100, 130, 100, .2)) ,url(${PlansBackground});
+z-index: 1;
+background-size: cover;
 `;
 
 export const PlansSectionPath = styled.div`
@@ -26,14 +30,15 @@ line-height: 5rem;
 
 export const PlansSectionCards = styled.div`
 display: flex;
+flex-wrap: wrap;
 justify-content: space-around;
 padding: 5rem;
 `;
 
 export const PlansCard = styled.div`
+border-radius: 2rem;
 height: 35rem;
-flex: 1;
-margin: 0 5rem;
+margin: 1rem 5rem;
 display: flex;
 flex-direction: column;
 justify-content: space-around;
@@ -41,8 +46,8 @@ position: relative;
 background-image: linear-gradient(
 to right bottom,
  #DFCBA1 0%,
- #DFCBA1 50%,
- #bfdaa1 50%,
+ #DFCBA1 20%,
+ #bfdaa1 20%,
  #bfdaa1 100%
  );
 `;
