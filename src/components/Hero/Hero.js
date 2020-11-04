@@ -18,7 +18,6 @@ export const Hero = () => {
         <>
             <NavBar>
                 <MainHeroRightPath/>
-
                 <NavBarDiv>
                     <NavBarLogo>Logo.</NavBarLogo>
                 </NavBarDiv>
@@ -33,7 +32,7 @@ export const Hero = () => {
                 <MainHeroLeft>
                     <MainHeroLeftHeader>Online Pizza Ordering.</MainHeroLeftHeader>
                     <MainHeroLeftParagraph>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</MainHeroLeftParagraph>
-                    <Button width='17rem' height='6rem' shadow>Order Now</Button>
+                    <Button animation width='17rem' height='6rem' shadow>Order Now</Button>
                 </MainHeroLeft>
                 <MainHeroRight>
                     <MainHeroRightImage src={Pizza}/>

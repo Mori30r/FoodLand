@@ -8,16 +8,31 @@ flex-direction: column;
 background-image: linear-gradient(to bottom left, #83B78C,  rgba(100, 130, 100, .2)) ,url(${PlansBackground});
 z-index: 1;
 background-size: cover;
-height: 100vh;
+height: 70vh;
+@media screen and (max-width: 850px){
+  height: 60vh;
+}
+@media screen and (max-width: 800px){
+  height: 120vh;
+}
+@media screen and (max-width: 750px){
+  height: 120vh;
+}
 `;
 
 export const PlansSectionPath = styled.div`
 background-color: ${ props => props.theme["orange"]};
 z-index: -1;
 position: absolute;
-height: 100vh;
+height: 70vh;
 width: 50vw;
 clip-path: polygon(0 100%, 100% 0, 0 0);
+@media screen and (max-width: 850px){
+  height: 60vh;
+  }
+  @media screen and (max-width: 800px){
+  height: 120vh;
+}
 `;
 
 export const PlansSectionHeading = styled.div`
@@ -26,21 +41,26 @@ h1{
 width: 50rem;
 padding: 5rem 0;
 line-height: 5rem;
+@media screen and (max-width: 1085px){
+text-align: center;
+}
 }
 `;
 
 export const PlansSectionCards = styled.div`
 display: flex;
-flex-wrap: wrap;
 justify-content: space-around;
-padding: 5rem;
+padding-top: 2rem;
+@media screen and (max-width: 800px){
+flex-direction: column;
+align-items: center;
+}
 `;
 
 export const PlansCard = styled.div`
 border-radius: 2rem;
 box-shadow: 0 1rem 2rem rgba(0, 0, 0, .7);
 height: 35rem;
-margin: 1rem 5rem;
 display: flex;
 flex-direction: column;
 justify-content: space-around;
@@ -56,7 +76,14 @@ to right bottom,
  transition: all .2s ease-out;
  &:hover{
  transform: translateY(-1rem) scale(1.2);
+ @media screen and (max-width: 380px){
+   transform: translateY(-1rem) scale(1.01);
+  }
  }
+@media screen and (max-width: 800px){
+margin-bottom: 2rem;
+width: 65vw;
+}
 `;
 
 export const PlansCardImage = styled.div`
