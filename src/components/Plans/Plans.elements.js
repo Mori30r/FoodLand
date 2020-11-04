@@ -8,7 +8,10 @@ flex-direction: column;
 background-image: linear-gradient(to bottom left, #83B78C,  rgba(100, 130, 100, .2)) ,url(${PlansBackground});
 z-index: 1;
 background-size: cover;
-height: 70vh;
+height: 100vh;
+@media screen and (max-width: 1085px){
+  height: 80vh;
+}
 @media screen and (max-width: 850px){
   height: 60vh;
 }
